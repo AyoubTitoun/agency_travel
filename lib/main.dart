@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Planet agency',
-      home: LoginPage(title: 'Flutter Demo Home Page'),
+      home: LoginPage(),
     );
   }
 }

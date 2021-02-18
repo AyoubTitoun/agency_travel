@@ -1,10 +1,7 @@
+import 'package:agency_app/mail_login.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -75,7 +72,12 @@ class _LoginPageState extends State<LoginPage> {
                       shape: RoundedRectangleBorder(
                           side: BorderSide(color: Colors.black, width: 2),
                           borderRadius: BorderRadius.circular(18.0)),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Mail_Login()));
+                      },
                       color: Colors.blue[900],
                       child: Text(
                         "Sign in with Email",
