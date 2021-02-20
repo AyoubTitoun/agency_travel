@@ -117,11 +117,11 @@ class _LoginPageState extends State<LoginPage> {
                         ],
                       ),
                     ))),
-            SizedBox(height: 10.0),
+            SizedBox(height: 15.0),
             Row(
               children: [
                 SizedBox(
-                  width: 25.0,
+                  width: 70.0,
                 ),
                 Text(
                   " didn't register yet ?",
